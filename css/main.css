@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main {
+    overflow-x: hidden;
+}
+
+
+/* ---------------------------------------------------HEADER----------------------------------------------------------------- */
+
+#header {
+    position: relative;
+}
+
+.header_nav {
+    width: 100vw;
+    height: 5rem;
+    position: relative;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+}
+
+img.img_logo {
+    width: 10rem;
+    height: 5rem;
+    position: absolute;
+}
+
+a.logo_img--link {
+    line-height: 5rem;
+}
+
+.container ul.nav {
+    display: flex;
+    justify-content: center;
+    padding-left: 2rem;
+}
+
+.container ul.nav li.list_item {
+    padding: 0 2rem;
+    position: relative;
+}
+
+.container ul.nav li.list_item::after {
+    content: "";
+    height: 0.1rem;
+    width: 100%;
+    position: absolute;
+    background-color: aliceblue;
+    left: 0;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.container ul.nav li.list_item:hover::after {
+    transform: scale(1);
+}
+
+.container ul.nav li.list_item a {
+    color: aliceblue;
+    font-size: 1.5rem;
+    line-height: 5rem;
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+
+.container ul.nav li.list_item:hover a {
+    opacity: 1;
+}
+
+.video_introduce video {
+    width: 100vw;
+    position: relative;
+    z-index: -10;
+    margin-bottom: -3rem;
+}
+
+.video_introduce {
+    margin-top: -5rem;
+}
+
+.video_introduce .container .infor_car {
+    position: absolute;
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    z-index: 9;
+}
+
+.video_introduce .container .infor_car h3 {
+    color: white;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    padding: 2rem 0;
+}
+
+.video_introduce .container .infor_car p {
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.btn-outline-secondary:hover {
+    background-color: white;
+    color: black;
+}
+
+.btn-outline-secondary {
+    color: white;
+    border: 0.08rem solid white;
+}
+
+.note {
+    display: none;
+}
+
+
+/* -------------------------------------------------------------CONTENT----------------------------------------------------------------------- */
+
+#bugatti {
+    width: 100vw;
+    height: 100%;
+    padding-bottom: 75%;
+    background: url("../img/bgt/1920x1080-px-Bugatti-Bugatti-Chiron-Sport-car-supercars-1519399-wallhere.com.jpg") top center/ cover no-repeat;
+}
+
+#ferrari {
+    width: 100vw;
+    height: 100%;
+    padding-bottom: 25%;
+    background: url("../img/ferari/thumb-1920-697314.jpeg") top center/ cover no-repeat;
+}
+
+#Lamborghini {
+    width: 100vw;
+    height: 100%;
+    padding-top: 25%;
+    background: url("../img/lambor/b00d0cdbf06fab3b2d8cc6847a014495.jpg") top center/ cover no-repeat;
+}
+
+#rollroyce {
+    width: 100vw;
+    height: 100%;
+    background: url("../img/RR/BG.jpg") top center/ cover no-repeat;
+}
+
+#rollroyce .title_car h3 {
+    padding: 0;
+}
+
+.list-rollroyce {
+    height: 45rem;
+    width: 480%;
+    transform: translateX(-0.5%);
+    transition: all 0.75s ease-in-out;
+}
+
+.list-rollroyce-show {
+    position: relative;
+}
+
+.left,
+.right {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.title_car {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_car h3 {
+    padding: 3rem;
+    font-size: 4rem;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.title_car h3::after {
+    content: "";
+    height: 0.1rem;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.title_car p {
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/* ----------------------------------------------------LIST CAR-------------------------------- */
+
+#list_car {
+    background-color: black;
+    padding-bottom: 15%;
+    width: 100vw;
+}
+
+#list_car .container {
+    overflow: hidden;
+    padding: 0;
+}
+
+.list-bugatti {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    margin: 0 -2rem;
+}
+
+.list-bugatti img {
+    width: 100%;
+    margin: 1rem;
+}
+
+.li-1--1 {
+    flex: 1;
+    margin: 1rem;
+    overflow-y: scroll;
+    height: 53.5rem;
+}
+
+.li-1--1::-webkit-scrollbar {
+    display: none;
+}
+
+.li-1--2 {
+    flex: 1;
+    margin: 1rem;
+}
+
+#list_car .container .title_car {
+    color: white;
+    display: flex;
+    align-items: inherit;
+}
+
+#list_car .container .title_car h3 {
+    padding: 0;
+    margin: 7rem 0;
+}
+
+.img-1 {
+    overflow: hidden;
+    position: relative;
+    margin: 1rem 0 1rem 1rem;
+}
+
+.img-1 img {
+    transform: scale(1.2);
+    transition: all 1s ease-in-out;
+    /* opacity: 0.6; */
+}
+
+.img-1 p {
+    text-align: start;
+    text-transform: uppercase;
+}
+
+.img-1:hover img {
+    transform: scale(1.4);
+    cursor: pointer;
+}
+
+.img-2 {
+    height: 53.5rem;
+    overflow: hidden;
+}
+
+.img-2 img {
+    height: 100%;
+    width: 100%;
+}
+
+.info-li--car {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    bottom: 25%;
+    color: aliceblue;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    transform: translateY(300%);
+    transition: all 1.4s ease-in-out;
+}
+
+.img-1:hover .info-li--car {
+    transform: translateY(0);
+}
+
+.info-li--car h3 {
+    text-transform: uppercase;
+}
+
+.list-bugatti:nth-child(2) {
+    display: flex;
+}
+
+#footer {
+    background: url("../img/bg/anh-background-den-cuc-dep_034510707.jpg");
+}
+
+#footer p {
+    font-size: 1.4rem;
+    color: white;
+}
